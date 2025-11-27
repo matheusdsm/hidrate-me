@@ -99,7 +99,7 @@
             const monthDigit = date.getMonth() + 1;
             const year = date.getFullYear();
 
-            return `${weekDay} (${day}), ${month} (${monthDigit}), ${year}`;
+            return `${weekDay} (${day}), ${month} (${monthDigit}) de ${year}`;
         }
 
         function hydrateHours(
@@ -132,3 +132,4 @@
             return `${numberFix}:00`;
         }
     });
+
