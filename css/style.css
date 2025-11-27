@@ -3,11 +3,6 @@
     --white: #fff;
 }
 
-html,
-body {
-    margin: 0;
-}
-
 html {
     line-height: 1.5;
 }
@@ -30,4 +25,15 @@ hr {
 
 .logo {
     margin: 0 auto;
+}
+
+@media (width <= 60ch) {
+    .container {
+        max-width: 100dvw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .logo img {
+        width: 100%;
+    }
 }
