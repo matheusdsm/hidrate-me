@@ -10,7 +10,7 @@ html {
 body {
     background: var(--blue);
     color: var(--white);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 hr {
@@ -37,3 +37,4 @@ hr {
         width: 100%;
     }
 }
+
