@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hidrate-me</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="js/main.js"></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="favicon/site.webmanifest" />
+    </head>
+    <body>
+        <section class="container">
+            <aside class="logo">
+                <img src="images/logo.png" alt="Hidrate-me logotipo" />
+            </aside>
+            <br />
+            <aside class="content">
+                <span id="dayText">carregando...</span>
+                <br />
+                você bebeu
+                <span id="cyclesDone">carregando...</span> ciclo(s) de água
+                (<span id="cyclesDoneHour">carregando...</span>) <br />
+                faltam <span id="cyclesLeft">carregando...</span> ciclo(s) de
+                água (<span id="cyclesLeftHour"></span>) <br />
+                <span id="hourTime">carregando</span>
+                <hr />
+
+                <label for="hourSlider">qual horário você acorda:</label>
+                <br />
+                <input
+                    type="range"
+                    id="hourSlider"
+                    name="hourSlider"
+                    min="3"
+                    max="11"
+                    value="8"
+                />
+                <span id="hourOutput"></span>
+                <hr />
+                * recomendável beber 500 ML a cada ciclo
+            </aside>
+        </section>
+    </body>
+</html>
