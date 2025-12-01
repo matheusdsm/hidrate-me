@@ -1,6 +1,7 @@
 :root {
     --blue: #0cc0df;
     --white: #fff;
+    --spacing: 8px;
 }
 
 html {
@@ -18,22 +19,21 @@ hr {
 }
 
 .container {
-    max-width: 600px;
+    max-width: clamp(600px, 600px, 100dvw);
     margin: 0 auto;
     display: grid;
 }
 
+.container > .content {
+    margin-left: var(--spacing);
+    margin-right: var(--spacing);
+}
+
 .logo {
     margin: 0 auto;
+    max-width: 400px;
 }
-/* 60ch */
-@media (width <= 40em) {
-    .container {
-        max-width: 100dvw;
-        margin-left: 8px;
-        margin-right: 8px;
-    }
-    .logo img {
-        width: 100%;
-    }
+
+.logo img {
+    max-width: 100%;
 }
